@@ -18,6 +18,20 @@ npm start
 
 Abrir http://localhost:3001. Verificaciones: `npm test`.
 
+## Publicar en Render
+
+Crear un **Web Service** conectado al repositorio de GitHub y configurar:
+
+- Branch: `main`.
+- Build Command: `npm ci && npm run build`.
+- Start Command: `npm start`.
+- Health Check Path: `/api/health`.
+- Usar una versión compatible de Node.js (por ejemplo, 22.12+).
+
+El servidor de producción escucha en `0.0.0.0` y utiliza el puerto de la variable `PORT` que asigna Render. Sin `PORT`, usa 3001. Se puede cambiar la dirección mediante `HOST`.
+
+El desarrollo local sigue usando `npm run dev` en http://localhost:3000. La ejecución local con `npm start`, después de compilar, sigue disponible en http://localhost:3001.
+
 ## Uso
 
 1. Ingresar nombre y descripción del proyecto, unidad, identificador único, nombre, responsable (nombre y apellido), duración positiva y predecesoras de cada actividad. El responsable es opcional y se incluye en el listado del informe; si no se ha definido aparece “Sin asignar”. El switch permite asignar identificadores automáticos (A…Z, AA, AB…) o editarlos manualmente. Al activar el modo automático se actualizan las referencias de las dependencias. Se puede cargar el ejemplo de 23 semanas.
