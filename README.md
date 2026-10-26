@@ -2,6 +2,12 @@
 
 Aplicación local en React y Node.js para resolver proyectos con duraciones deterministas. Requiere Node.js 20.19+ o 22.12+.
 
+## Documentación para estudiar y presentar
+
+- [Guía completa del programa y defensa](docs/GUIA-DEL-PROGRAMA.md): fundamentos CPM, ejemplo resuelto, arquitectura, código, calendario, pruebas, limitaciones y preguntas de clase.
+- [Repaso para la presentación](docs/REPASO-PARA-CLASE.md): fórmulas, resultados clave y guion breve.
+- [Guía imprimible en HTML](docs/GUIA-DEL-PROGRAMA.html) y [repaso imprimible](docs/REPASO-PARA-CLASE.html): descargar y abrir en un navegador para leer o guardar como PDF. No requieren instalar dependencias ni tener internet para leer el contenido.
+
 ## Ejecutar
 
 ```sh
